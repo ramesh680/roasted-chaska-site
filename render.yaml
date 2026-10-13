@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: roasted-chaska
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./public
+    pullRequestPreviewsEnabled: false
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*.svg
+        name: Cache-Control
+        value: public, max-age=604800
