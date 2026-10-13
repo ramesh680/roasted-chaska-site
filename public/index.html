@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Roasted Chaska | Small-batch roasted dry fruits, Jaipur</title>
+<meta name="description" content="Masala kaju, peri peri almonds, Korean chilli badam and more, roasted to order in Jaipur. Order on WhatsApp. Delivery across India.">
+<meta name="theme-color" content="#140D07">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Roasted Chaska - Roast kiya kya?">
+<meta property="og:description" content="Small-batch roasted and spiced dry fruits from Jaipur. Order on WhatsApp.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Karla:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ground:#140D07; --pan:#1D1309; --raised:#281A0E; --edge:#3A2615;
+  --cream:#F7ECDC; --oat:#C6AE93; --ash:#8E7659;
+  --chilli:#E8402B; --chilli-dim:#B32E1E; --saffron:#F5A623; --leaf:#7E9A4E;
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --body:'Karla',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  --gut:clamp(20px,5vw,64px);
+  --maxw:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+#range{scroll-margin-top:28px}
+body{
+  margin:0;background:var(--ground);color:var(--cream);
+  font-family:var(--body);font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  background-image:
+    radial-gradient(1100px 620px at 78% -8%, rgba(245,166,35,.16), transparent 62%),
+    radial-gradient(760px 520px at 4% 22%, rgba(232,64,43,.11), transparent 60%);
+  background-attachment:fixed;
+}
+img{max-width:100%}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:600;text-wrap:balance;line-height:1.05}
+p{margin:0}
+:focus-visible{outline:2.5px solid var(--saffron);outline-offset:3px;border-radius:3px}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gut)}
+.eyebrow{
+  font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+  font-weight:700;color:var(--saffron);
+}
+
+/* ---------------------------------------------------------------- hero */
+header.top{padding-block:clamp(28px,5vw,44px) 0}
+.brandline{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.seal{
+  width:46px;height:46px;flex:0 0 auto;border-radius:50%;
+  border:1.5px solid var(--chilli);display:grid;place-items:center;
+  background:radial-gradient(circle at 34% 28%, #3A2312, #1B1009);
+}
+.brandname{font-family:var(--display);font-size:1.22rem;font-weight:800;letter-spacing:-.01em}
+.brandsub{font-size:.76rem;color:var(--ash);letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+
+.hero{padding-block:clamp(40px,8vw,88px) clamp(36px,6vw,64px)}
+.hero h1{
+  font-size:clamp(2.9rem,11vw,6.6rem);font-weight:800;letter-spacing:-.035em;
+  font-variation-settings:'SOFT' 40,'WONK' 1;
+}
+.hero h1 .q{color:var(--chilli);display:inline-block}
+.hero .lede{
+  margin-top:clamp(18px,3vw,26px);max-width:34ch;font-size:clamp(1.05rem,2.4vw,1.3rem);
+  color:var(--oat);
+}
+.hero .lede b{color:var(--cream);font-weight:500}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:clamp(26px,4vw,36px)}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;padding:14px 22px;border-radius:999px;
+  font-family:var(--body);font-weight:700;font-size:.95rem;text-decoration:none;
+  border:1.5px solid transparent;transition:transform .15s ease,background .15s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--chilli);color:#fff}
+.btn-wa:hover{background:#F04A34}
+.btn-ghost{border-color:var(--edge);color:var(--cream)}
+.btn-ghost:hover{border-color:var(--oat);background:rgba(247,236,220,.04)}
+
+.strip{
+  display:flex;gap:26px;flex-wrap:wrap;margin-top:clamp(34px,6vw,52px);
+  padding-top:22px;border-top:1px solid var(--edge);
+}
+.strip div{display:flex;flex-direction:column;gap:2px}
+.strip dt{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ash);font-weight:700}
+.strip dd{margin:0;font-family:var(--display);font-size:1.15rem;font-weight:600}
+
+/* ------------------------------------------------------------- section */
+section{padding-block:clamp(52px,9vw,96px)}
+.sec-head{display:flex;flex-direction:column;gap:12px;max-width:52ch}
+.sec-head h2{font-size:clamp(1.9rem,5.2vw,3rem);letter-spacing:-.025em}
+.sec-head p{color:var(--oat)}
+
+/* --------------------------------------------------------- price board */
+.board{margin-top:clamp(30px,5vw,46px);border-top:1px solid var(--edge)}
+.row{
+  display:grid;grid-template-columns:1fr auto;gap:8px 28px;align-items:start;
+  padding-block:26px;border-bottom:1px solid var(--edge);
+}
+.row .name{display:flex;flex-direction:column;gap:9px;min-width:0}
+.row h3{font-size:clamp(1.3rem,3.4vw,1.75rem);font-weight:600;letter-spacing:-.015em}
+.row .desc{color:var(--oat);font-size:.95rem;max-width:46ch}
+.heat{display:flex;align-items:center;gap:8px;font-size:.74rem;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:700;color:var(--ash)}
+.heat .pods{display:flex;gap:3px}
+.heat svg{display:block}
+.prices{display:flex;flex-direction:column;align-items:flex-end;gap:4px;white-space:nowrap}
+.kg{font-family:var(--display);font-size:clamp(1.45rem,4vw,1.9rem);font-weight:600;
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.kg span{font-family:var(--body);font-size:.8rem;font-weight:500;color:var(--ash);letter-spacing:.04em}
+.quarter{font-size:.85rem;color:var(--oat);font-variant-numeric:tabular-nums}
+.row .order{grid-column:1/-1;margin-top:4px}
+.linkwa{
+  display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:.88rem;
+  color:var(--saffron);text-decoration:none;border-bottom:1.5px solid rgba(245,166,35,.35);
+  padding-bottom:2px;
+}
+.linkwa:hover{border-bottom-color:var(--saffron)}
+.note{margin-top:20px;font-size:.85rem;color:var(--ash);max-width:60ch}
+
+/* ------------------------------------------------------------- panels */
+.panels{display:grid;gap:18px;margin-top:clamp(30px,5vw,44px);
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.panel{
+  background:var(--pan);border:1px solid var(--edge);border-radius:18px;
+  padding:26px 24px;display:flex;flex-direction:column;gap:11px;
+}
+.panel h3{font-size:1.25rem;font-weight:600}
+.panel p{color:var(--oat);font-size:.94rem}
+.panel .linkwa{margin-top:auto;padding-top:8px;align-self:flex-start}
+
+/* -------------------------------------------------------------- steps */
+.steps{display:grid;gap:2px;margin-top:clamp(30px,5vw,44px);
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  border:1px solid var(--edge);border-radius:18px;overflow:hidden;background:var(--edge)}
+.step{background:var(--pan);padding:26px 24px;display:flex;flex-direction:column;gap:10px}
+.step .num{font-family:var(--display);font-size:2.1rem;font-weight:800;color:var(--chilli);line-height:1}
+.step h3{font-size:1.05rem;font-weight:600}
+.step p{color:var(--oat);font-size:.92rem}
+
+/* ------------------------------------------------------------ contact */
+.contact{background:var(--pan);border:1px solid var(--edge);border-radius:24px;
+  padding:clamp(28px,5vw,48px);display:grid;gap:30px;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));align-items:start}
+.contact h2{font-size:clamp(1.8rem,4.6vw,2.5rem);letter-spacing:-.02em}
+.contact .lede{color:var(--oat);margin-top:12px;max-width:38ch}
+.deets{display:flex;flex-direction:column;gap:18px}
+.deet{display:flex;flex-direction:column;gap:3px}
+.deet dt{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ash);font-weight:700}
+.deet dd{margin:0;font-size:1.05rem}
+.deet a{text-decoration:none;border-bottom:1px solid var(--edge)}
+.deet a:hover{border-bottom-color:var(--saffron)}
+
+footer{padding-block:44px 92px;border-top:1px solid var(--edge);margin-top:clamp(52px,9vw,96px)}
+.footrow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  font-size:.84rem;color:var(--ash)}
+
+/* ------------------------------------------------------- sticky order */
+.dock{
+  position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;
+  background:rgba(20,13,7,.94);backdrop-filter:blur(10px);
+  border-top:1px solid var(--edge);
+  padding:12px var(--gut);
+  padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));
+}
+.dock .btn{width:100%;justify-content:center}
+@media (max-width:720px){
+  .dock{display:block}
+  footer{padding-bottom:112px}
+  .row{grid-template-columns:1fr}
+  .prices{align-items:flex-start}
+  .strip{gap:18px 26px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap brandline">
+    <span class="seal" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/>
+        <path d="M12 3c1.1 1.4 1.1 3.1 0 4.6" stroke="#7E9A4E" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="brandname">Roasted Chaska</span>
+    <span class="brandsub">Jaipur</span>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="eyebrow">Small-batch roasted dry fruits</p>
+    <h1>Roast kiya kya<span class="q">?</span></h1>
+    <p class="lede">Cashews, almonds and peanuts roasted and spiced in small batches in Jaipur.
+      Sold by the kilo, <b>made to order</b>, and never sitting long enough to go soft.</p>
+    <div class="cta-row">
+      <a class="btn btn-wa" href="https://wa.me/919799969322?text=Hi%20Roasted%20Chaska%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5v-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.6-.9 2.5.2 1.3.9 2.5 1.9 3.5a9 9 0 0 0 4.3 2.7c1 .3 1.8.2 2.4-.1.5-.3.9-.8 1.1-1.3.1-.4.1-.7 0-.8l-.6-.4z"/></svg>
+        Order on WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="#range">See the range</a>
+    </div>
+    <dl class="strip">
+      <div><dt>Roasted in</dt><dd>Jaipur</dd></div>
+      <div><dt>Sold by</dt><dd>250g &amp; 1kg</dd></div>
+      <div><dt>Ordering</dt><dd>WhatsApp</dd></div>
+      <div><dt>Delivery</dt><dd>Local &amp; across India</dd></div>
+    </dl>
+  </div>
+
+  <section id="range">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">The range</p>
+        <h2>Five things, roasted properly.</h2>
+        <p>Heat is marked on every one, so you know what you are getting before you open the packet.
+          Prices are per kilo; 250g packs are a quarter of that.</p>
+      </div>
+
+      <div class="board">
+
+        <article class="row">
+          <div class="name">
+            <h3>Masala Kaju</h3>
+            <p class="desc">Whole cashews, roasted and tossed in a dry masala. The one people come back for.</p>
+            <p class="heat"><span class="pods" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#3A2615"/></svg>
+            </span> Medium heat</p>
+          </div>
+          <div class="prices"><span class="kg">&#8377;1,100 <span>/ kg</span></span><span class="quarter">&#8377;275 for 250g</span></div>
+          <div class="order"><a class="linkwa" href="https://wa.me/919799969322?text=Hi%20Roasted%20Chaska%2C%20I%27d%20like%20to%20order%20Masala%20Kaju." target="_blank" rel="noopener">Order Masala Kaju &rarr;</a></div>
+        </article>
+
+        <article class="row">
+          <div class="name">
+            <h3>Peri Peri Almonds</h3>
+            <p class="desc">Almonds with a sharp, tangy peri peri coat. Sour-hot rather than plain chilli.</p>
+            <p class="heat"><span class="pods" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+            </span> Hot</p>
+          </div>
+          <div class="prices"><span class="kg">&#8377;950 <span>/ kg</span></span><span class="quarter">&#8377;240 for 250g</span></div>
+          <div class="order"><a class="linkwa" href="https://wa.me/919799969322?text=Hi%20Roasted%20Chaska%2C%20I%27d%20like%20to%20order%20Peri%20Peri%20Almonds." target="_blank" rel="noopener">Order Peri Peri Almonds &rarr;</a></div>
+        </article>
+
+        <article class="row">
+          <div class="name">
+            <h3>Badam Korean Chilli</h3>
+            <p class="desc">Almonds in Korean chilli &mdash; smoky and bright, with heat that builds instead of hitting at once.</p>
+            <p class="heat"><span class="pods" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+            </span> Hot</p>
+          </div>
+          <div class="prices"><span class="kg">&#8377;780 <span>/ kg</span></span><span class="quarter">&#8377;195 for 250g</span></div>
+          <div class="order"><a class="linkwa" href="https://wa.me/919799969322?text=Hi%20Roasted%20Chaska%2C%20I%27d%20like%20to%20order%20Badam%20Korean%20Chilli." target="_blank" rel="noopener">Order Badam Korean Chilli &rarr;</a></div>
+        </article>
+
+        <article class="row">
+          <div class="name">
+            <h3>Chilli Garlic Peanuts</h3>
+            <p class="desc">The everyday jar. Garlic-forward, properly crisp, and gone faster than you planned.</p>
+            <p class="heat"><span class="pods" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#3A2615"/></svg>
+            </span> Medium heat</p>
+          </div>
+          <div class="prices"><span class="kg">&#8377;320 <span>/ kg</span></span><span class="quarter">&#8377;80 for 250g</span></div>
+          <div class="order"><a class="linkwa" href="https://wa.me/919799969322?text=Hi%20Roasted%20Chaska%2C%20I%27d%20like%20to%20order%20Chilli%20Garlic%20Peanuts." target="_blank" rel="noopener">Order Chilli Garlic Peanuts &rarr;</a></div>
+        </article>
+
+        <article class="row">
+          <div class="name">
+            <h3>Breakfast Seeds</h3>
+            <p class="desc">A plain roasted seed mix for the morning bowl. No chilli &mdash; the one everyone in the house can eat.</p>
+            <p class="heat"><span class="pods" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#3A2615"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#3A2615"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#3A2615"/></svg>
+            </span> No heat</p>
+          </div>
+          <div class="prices"><span class="kg">&#8377;500 <span>/ kg</span></span><span class="quarter">&#8377;125 for 250g</span></div>
+          <div class="order"><a class="linkwa" href="https://wa.me/919799969322?text=Hi%20Roasted%20Chaska%2C%20I%27d%20like%20to%20order%20Breakfast%20Seeds." target="_blank" rel="noopener">Order Breakfast Seeds &rarr;</a></div>
+        </article>
+
+      </div>
+      <p class="note">Prices are per kilo and can change with the market rate for nuts. Message us for the rate on the day, or for a quantity that is not listed.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Ordering</p>
+        <h2>Three messages and it is on its way.</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Tell us what you want</h3>
+          <p>Message on WhatsApp with the item and the quantity. Not sure how hot something is? Ask &mdash; we will tell you straight.</p>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>We confirm and roast</h3>
+          <p>You get the total and the day it will be ready. Everything is roasted against the order, not pulled off a shelf.</p>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <h3>Collect or have it sent</h3>
+          <p>Pick up in Jaipur, or we send it out. Shipping is quoted with your order once we know the weight and the pin code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Bigger orders</p>
+        <h2>Hampers, festivals and offices.</h2>
+      </div>
+      <div class="panels">
+        <div class="panel">
+          <h3>Diwali &amp; festival hampers</h3>
+          <p>Mixed boxes put together from the range, in the quantities and the budget you have in mind. Tell us the count and the per-box budget and we will come back with options.</p>
+          <a class="linkwa" href="https://wa.me/919799969322?text=Hi%20Roasted%20Chaska%2C%20I%27d%20like%20to%20ask%20about%20festival%20hampers." target="_blank" rel="noopener">Ask about hampers &rarr;</a>
+        </div>
+        <div class="panel">
+          <h3>Corporate gifting</h3>
+          <p>Bulk boxes for staff and clients, with your own card or sleeve if you want one. Lead time depends on the count, so message early in the season rather than the week before.</p>
+          <a class="linkwa" href="https://wa.me/919799969322?text=Hi%20Roasted%20Chaska%2C%20I%27d%20like%20to%20ask%20about%20corporate%20gifting." target="_blank" rel="noopener">Ask about corporate orders &rarr;</a>
+        </div>
+        <div class="panel">
+          <h3>Shops &amp; resellers</h3>
+          <p>Wholesale rates for kirana shops and resellers buying by the kilo. Message with what you would take in a month and we will quote.</p>
+          <a class="linkwa" href="https://wa.me/919799969322?text=Hi%20Roasted%20Chaska%2C%20I%27d%20like%20wholesale%20rates." target="_blank" rel="noopener">Ask for wholesale rates &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h2>Roast kiya kya?</h2>
+          <p class="lede">Message on WhatsApp for anything &mdash; an order, a rate, or just to ask how hot the Korean chilli really is.</p>
+          <div class="cta-row">
+            <a class="btn btn-wa" href="https://wa.me/919799969322?text=Hi%20Roasted%20Chaska%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5v-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.6-.9 2.5.2 1.3.9 2.5 1.9 3.5a9 9 0 0 0 4.3 2.7c1 .3 1.8.2 2.4-.1.5-.3.9-.8 1.1-1.3.1-.4.1-.7 0-.8l-.6-.4z"/></svg>
+              Message on WhatsApp
+            </a>
+          </div>
+        </div>
+        <dl class="deets">
+          <div class="deet"><dt>WhatsApp &amp; phone</dt><dd><a href="tel:+919799969322">+91 97999 69322</a></dd></div>
+          <div class="deet"><dt>Email</dt><dd><a href="mailto:chaskaroasted@gmail.com">chaskaroasted@gmail.com</a></dd></div>
+          <div class="deet"><dt>Based in</dt><dd>Jaipur, Rajasthan</dd></div>
+          <div class="deet"><dt>Orders</dt><dd>Local pickup &amp; delivery across India</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footrow">
+    <span>&copy; 2026 Roasted Chaska &middot; Jaipur</span>
+    <span>Roast kiya kya?</span>
+  </div>
+</footer>
+
+<div class="dock">
+  <a class="btn btn-wa" href="https://wa.me/919799969322?text=Hi%20Roasted%20Chaska%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5v-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.7.7-1 1.6-.9 2.5.2 1.3.9 2.5 1.9 3.5a9 9 0 0 0 4.3 2.7c1 .3 1.8.2 2.4-.1.5-.3.9-.8 1.1-1.3.1-.4.1-.7 0-.8l-.6-.4z"/></svg>
+    Order on WhatsApp
+  </a>
+</div>
+</body>
+</html>
