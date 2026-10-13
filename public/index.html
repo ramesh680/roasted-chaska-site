@@ -5,21 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Roasted Chaska | Small-batch roasted dry fruits, Jaipur</title>
 <meta name="description" content="Masala kaju, peri peri almonds, Korean chilli badam and more, roasted to order in Jaipur. Order on WhatsApp. Delivery across India.">
-<meta name="theme-color" content="#140D07">
+<meta name="theme-color" content="#EFE9DD">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Roasted Chaska - Roast kiya kya?">
 <meta property="og:description" content="Small-batch roasted and spiced dry fruits from Jaipur. Order on WhatsApp.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Karla:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Jost:wght@400;500;600&family=Caveat:wght@600;700&display=swap">
 <style>
 :root{
-  --ground:#140D07; --pan:#1D1309; --raised:#281A0E; --edge:#3A2615;
-  --cream:#F7ECDC; --oat:#C6AE93; --ash:#8E7659;
-  --chilli:#E8402B; --chilli-dim:#B32E1E; --saffron:#F5A623; --leaf:#7E9A4E;
-  --display:'Fraunces',Georgia,'Times New Roman',serif;
-  --body:'Karla',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  --ground:#EFE9DD; --pan:#F7F3EA; --raised:#FBF8F2; --edge:#D9D0BF;
+  --ink:#141414; --cream:#141414; --oat:#4F4A41; --ash:#7A7366;
+  --green:#2F6A2C; --green-deep:#24561F; --leaf:#4C8A3C; --tint:#E3EBDB;
+  --display:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --body:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  --script:'Caveat','Segoe Print','Bradley Hand',cursive;
   --gut:clamp(20px,5vw,64px);
   --maxw:1120px;
 }
@@ -27,100 +28,105 @@
 html{scroll-behavior:smooth}
 #range{scroll-margin-top:28px}
 body{
-  margin:0;background:var(--ground);color:var(--cream);
-  font-family:var(--body);font-size:16px;line-height:1.6;
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:var(--body);font-size:16.5px;line-height:1.6;
   -webkit-font-smoothing:antialiased;
   background-image:
-    radial-gradient(1100px 620px at 78% -8%, rgba(245,166,35,.16), transparent 62%),
-    radial-gradient(760px 520px at 4% 22%, rgba(232,64,43,.11), transparent 60%);
+    radial-gradient(900px 560px at 85% -10%, rgba(255,255,255,.75), transparent 65%),
+    radial-gradient(700px 480px at 0% 30%, rgba(76,138,60,.07), transparent 60%);
   background-attachment:fixed;
 }
 img{max-width:100%}
 a{color:inherit}
-h1,h2,h3{margin:0;font-family:var(--display);font-weight:600;text-wrap:balance;line-height:1.05}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:800;text-wrap:balance;line-height:1.02;color:var(--ink)}
 p{margin:0}
-:focus-visible{outline:2.5px solid var(--saffron);outline-offset:3px;border-radius:3px}
+:focus-visible{outline:2.5px solid var(--green);outline-offset:3px;border-radius:3px}
 
 .wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--gut)}
 .eyebrow{
-  font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
-  font-weight:700;color:var(--saffron);
+  font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;
+  font-weight:600;color:var(--green);
 }
+.rule{display:block;width:56px;height:2px;background:var(--green);border:0;margin:0}
 
 /* ---------------------------------------------------------------- hero */
 header.top{padding-block:clamp(28px,5vw,44px) 0}
 .brandline{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
 .seal{
   width:46px;height:46px;flex:0 0 auto;border-radius:50%;
-  border:1.5px solid var(--chilli);display:grid;place-items:center;
-  background:radial-gradient(circle at 34% 28%, #3A2312, #1B1009);
+  border:1.5px solid var(--green);display:grid;place-items:center;
+  background:var(--pan);
 }
 .brandname{font-family:var(--display);font-size:1.22rem;font-weight:800;letter-spacing:-.01em}
-.brandsub{font-size:.76rem;color:var(--ash);letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.brandsub{font-size:.76rem;color:var(--ash);letter-spacing:.2em;text-transform:uppercase;font-weight:500}
 
 .hero{padding-block:clamp(40px,8vw,88px) clamp(36px,6vw,64px)}
 .hero h1{
-  font-size:clamp(2.9rem,11vw,6.6rem);font-weight:800;letter-spacing:-.035em;
-  font-variation-settings:'SOFT' 40,'WONK' 1;
+  font-size:clamp(2.9rem,11vw,6.6rem);font-weight:900;letter-spacing:-.04em;
 }
-.hero h1 .q{color:var(--chilli);display:inline-block}
+.hero h1 .q{color:var(--green);display:inline-block;font-family:var(--script);font-weight:700;
+  font-size:1.15em;transform:rotate(-8deg) translateY(.04em);margin-left:.06em}
 .hero .lede{
-  margin-top:clamp(18px,3vw,26px);max-width:34ch;font-size:clamp(1.05rem,2.4vw,1.3rem);
+  margin-top:clamp(18px,3vw,26px);max-width:36ch;font-size:clamp(1.05rem,2.4vw,1.3rem);
   color:var(--oat);
 }
-.hero .lede b{color:var(--cream);font-weight:500}
+.hero .lede b{color:var(--ink);font-weight:600}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:clamp(26px,4vw,36px)}
 .btn{
   display:inline-flex;align-items:center;gap:9px;padding:14px 22px;border-radius:999px;
-  font-family:var(--body);font-weight:700;font-size:.95rem;text-decoration:none;
+  font-family:var(--body);font-weight:600;font-size:.95rem;text-decoration:none;letter-spacing:.02em;
   border:1.5px solid transparent;transition:transform .15s ease,background .15s ease;
 }
 .btn:hover{transform:translateY(-2px)}
-.btn-wa{background:var(--chilli);color:#fff}
-.btn-wa:hover{background:#F04A34}
-.btn-ghost{border-color:var(--edge);color:var(--cream)}
-.btn-ghost:hover{border-color:var(--oat);background:rgba(247,236,220,.04)}
+.btn-wa{background:var(--green);color:#fff}
+.btn-wa:hover{background:var(--green-deep)}
+.btn-ghost{border-color:var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:rgba(20,20,20,.05)}
 
 .strip{
   display:flex;gap:26px;flex-wrap:wrap;margin-top:clamp(34px,6vw,52px);
   padding-top:22px;border-top:1px solid var(--edge);
 }
 .strip div{display:flex;flex-direction:column;gap:2px}
-.strip dt{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ash);font-weight:700}
-.strip dd{margin:0;font-family:var(--display);font-size:1.15rem;font-weight:600}
+.strip dt{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ash);font-weight:500}
+.strip dd{margin:0;font-family:var(--display);font-size:1.12rem;font-weight:700}
 
 /* ------------------------------------------------------------- section */
 section{padding-block:clamp(52px,9vw,96px)}
 .sec-head{display:flex;flex-direction:column;gap:12px;max-width:52ch}
-.sec-head h2{font-size:clamp(1.9rem,5.2vw,3rem);letter-spacing:-.025em}
+.sec-head h2{font-size:clamp(1.9rem,5.2vw,3rem);letter-spacing:-.03em}
 .sec-head p{color:var(--oat)}
+.sec-head .eyebrow{color:var(--green)}
 
 /* --------------------------------------------------------- price board */
-.board{margin-top:clamp(30px,5vw,46px);border-top:1px solid var(--edge)}
+.board{margin-top:clamp(30px,5vw,46px);background:var(--pan);border:1px solid var(--edge);
+  border-radius:20px;padding:4px clamp(18px,3vw,32px)}
 .row{
   display:grid;grid-template-columns:1fr auto;gap:8px 28px;align-items:start;
-  padding-block:26px;border-bottom:1px solid var(--edge);
+  padding-block:24px;border-bottom:1px solid var(--edge);
 }
+.row:last-child{border-bottom:0}
 .row .name{display:flex;flex-direction:column;gap:9px;min-width:0}
-.row h3{font-size:clamp(1.3rem,3.4vw,1.75rem);font-weight:600;letter-spacing:-.015em}
-.row .desc{color:var(--oat);font-size:.95rem;max-width:46ch}
-.heat{display:flex;align-items:center;gap:8px;font-size:.74rem;letter-spacing:.14em;
-  text-transform:uppercase;font-weight:700;color:var(--ash)}
+.row h3{font-size:clamp(1.25rem,3.2vw,1.6rem);font-weight:800;letter-spacing:-.02em}
+.row .desc{color:var(--oat);font-size:.97rem;max-width:46ch}
+.heat{display:flex;align-items:center;gap:8px;font-size:.72rem;letter-spacing:.18em;
+  text-transform:uppercase;font-weight:500;color:var(--ash)}
 .heat .pods{display:flex;gap:3px}
 .heat svg{display:block}
 .prices{display:flex;flex-direction:column;align-items:flex-end;gap:4px;white-space:nowrap}
-.kg{font-family:var(--display);font-size:clamp(1.45rem,4vw,1.9rem);font-weight:600;
+.kg{font-family:var(--display);font-size:clamp(1.4rem,4vw,1.8rem);font-weight:800;
   font-variant-numeric:tabular-nums;letter-spacing:-.02em}
 .kg span{font-family:var(--body);font-size:.8rem;font-weight:500;color:var(--ash);letter-spacing:.04em}
-.quarter{font-size:.85rem;color:var(--oat);font-variant-numeric:tabular-nums}
+.quarter{font-size:.88rem;color:var(--oat);font-variant-numeric:tabular-nums}
 .row .order{grid-column:1/-1;margin-top:4px}
 .linkwa{
-  display:inline-flex;align-items:center;gap:7px;font-weight:700;font-size:.88rem;
-  color:var(--saffron);text-decoration:none;border-bottom:1.5px solid rgba(245,166,35,.35);
+  display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:.86rem;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:var(--green);text-decoration:none;border-bottom:1.5px solid rgba(47,106,44,.3);
   padding-bottom:2px;
 }
-.linkwa:hover{border-bottom-color:var(--saffron)}
-.note{margin-top:20px;font-size:.85rem;color:var(--ash);max-width:60ch}
+.linkwa:hover{border-bottom-color:var(--green)}
+.note{margin-top:20px;font-size:.88rem;color:var(--ash);max-width:60ch}
 
 /* ------------------------------------------------------------- panels */
 .panels{display:grid;gap:18px;margin-top:clamp(30px,5vw,44px);
@@ -129,40 +135,40 @@ section{padding-block:clamp(52px,9vw,96px)}
   background:var(--pan);border:1px solid var(--edge);border-radius:18px;
   padding:26px 24px;display:flex;flex-direction:column;gap:11px;
 }
-.panel h3{font-size:1.25rem;font-weight:600}
-.panel p{color:var(--oat);font-size:.94rem}
+.panel h3{font-size:1.2rem;font-weight:800;letter-spacing:-.01em}
+.panel p{color:var(--oat);font-size:.95rem}
 .panel .linkwa{margin-top:auto;padding-top:8px;align-self:flex-start}
 
 /* -------------------------------------------------------------- steps */
-.steps{display:grid;gap:2px;margin-top:clamp(30px,5vw,44px);
+.steps{display:grid;gap:1px;margin-top:clamp(30px,5vw,44px);
   grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
   border:1px solid var(--edge);border-radius:18px;overflow:hidden;background:var(--edge)}
 .step{background:var(--pan);padding:26px 24px;display:flex;flex-direction:column;gap:10px}
-.step .num{font-family:var(--display);font-size:2.1rem;font-weight:800;color:var(--chilli);line-height:1}
-.step h3{font-size:1.05rem;font-weight:600}
-.step p{color:var(--oat);font-size:.92rem}
+.step .num{font-family:var(--script);font-size:2.6rem;font-weight:700;color:var(--green);line-height:1}
+.step h3{font-size:1.05rem;font-weight:800}
+.step p{color:var(--oat);font-size:.94rem}
 
 /* ------------------------------------------------------------ contact */
-.contact{background:var(--pan);border:1px solid var(--edge);border-radius:24px;
+.contact{background:var(--tint);border:1.5px solid var(--green);border-radius:22px;
   padding:clamp(28px,5vw,48px);display:grid;gap:30px;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));align-items:start}
-.contact h2{font-size:clamp(1.8rem,4.6vw,2.5rem);letter-spacing:-.02em}
+.contact h2{font-size:clamp(1.8rem,4.6vw,2.5rem);letter-spacing:-.03em}
 .contact .lede{color:var(--oat);margin-top:12px;max-width:38ch}
 .deets{display:flex;flex-direction:column;gap:18px}
 .deet{display:flex;flex-direction:column;gap:3px}
-.deet dt{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ash);font-weight:700}
+.deet dt{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);font-weight:600}
 .deet dd{margin:0;font-size:1.05rem}
-.deet a{text-decoration:none;border-bottom:1px solid var(--edge)}
-.deet a:hover{border-bottom-color:var(--saffron)}
+.deet a{text-decoration:none;border-bottom:1px solid rgba(20,20,20,.25)}
+.deet a:hover{border-bottom-color:var(--green)}
 
 footer{padding-block:44px 92px;border-top:1px solid var(--edge);margin-top:clamp(52px,9vw,96px)}
 .footrow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
-  font-size:.84rem;color:var(--ash)}
+  font-size:.84rem;color:var(--ash);letter-spacing:.04em}
 
 /* ------------------------------------------------------- sticky order */
 .dock{
   position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;
-  background:rgba(20,13,7,.94);backdrop-filter:blur(10px);
+  background:rgba(239,233,221,.94);backdrop-filter:blur(10px);
   border-top:1px solid var(--edge);
   padding:12px var(--gut);
   padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));
@@ -186,8 +192,7 @@ footer{padding-block:44px 92px;border-top:1px solid var(--edge);margin-top:clamp
   <div class="wrap brandline">
     <span class="seal" aria-hidden="true">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/>
-        <path d="M12 3c1.1 1.4 1.1 3.1 0 4.6" stroke="#7E9A4E" stroke-width="1.6" stroke-linecap="round"/>
+        <path d="M19 4C10 4 5 9 5 15c0 1.7.5 3.2 1.3 4.4C8 13 12 10 16 8c-3.6 2.6-6.4 6-8.1 11.3 1.1.5 2.3.7 3.6.7C17 20 20 14 19 4z" fill="#2F6A2C"/>
       </svg>
     </span>
     <span class="brandname">Roasted Chaska</span>
@@ -232,9 +237,9 @@ footer{padding-block:44px 92px;border-top:1px solid var(--edge);margin-top:clamp
             <h3>Masala Kaju</h3>
             <p class="desc">Whole cashews, roasted and tossed in a dry masala. The one people come back for.</p>
             <p class="heat"><span class="pods" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#3A2615"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#2F6A2C"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#2F6A2C"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#D9D0BF"/></svg>
             </span> Medium heat</p>
           </div>
           <div class="prices"><span class="kg">&#8377;1,100 <span>/ kg</span></span><span class="quarter">&#8377;275 for 250g</span></div>
@@ -246,9 +251,9 @@ footer{padding-block:44px 92px;border-top:1px solid var(--edge);margin-top:clamp
             <h3>Peri Peri Almonds</h3>
             <p class="desc">Almonds with a sharp, tangy peri peri coat. Sour-hot rather than plain chilli.</p>
             <p class="heat"><span class="pods" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#2F6A2C"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#2F6A2C"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#2F6A2C"/></svg>
             </span> Hot</p>
           </div>
           <div class="prices"><span class="kg">&#8377;950 <span>/ kg</span></span><span class="quarter">&#8377;240 for 250g</span></div>
@@ -260,9 +265,9 @@ footer{padding-block:44px 92px;border-top:1px solid var(--edge);margin-top:clamp
             <h3>Badam Korean Chilli</h3>
             <p class="desc">Almonds in Korean chilli &mdash; smoky and bright, with heat that builds instead of hitting at once.</p>
             <p class="heat"><span class="pods" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#2F6A2C"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#2F6A2C"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#2F6A2C"/></svg>
             </span> Hot</p>
           </div>
           <div class="prices"><span class="kg">&#8377;780 <span>/ kg</span></span><span class="quarter">&#8377;195 for 250g</span></div>
@@ -274,9 +279,9 @@ footer{padding-block:44px 92px;border-top:1px solid var(--edge);margin-top:clamp
             <h3>Chilli Garlic Peanuts</h3>
             <p class="desc">The everyday jar. Garlic-forward, properly crisp, and gone faster than you planned.</p>
             <p class="heat"><span class="pods" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#E8402B"/></svg>
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#3A2615"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#2F6A2C"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#2F6A2C"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#D9D0BF"/></svg>
             </span> Medium heat</p>
           </div>
           <div class="prices"><span class="kg">&#8377;320 <span>/ kg</span></span><span class="quarter">&#8377;80 for 250g</span></div>
@@ -288,9 +293,9 @@ footer{padding-block:44px 92px;border-top:1px solid var(--edge);margin-top:clamp
             <h3>Breakfast Seeds</h3>
             <p class="desc">A plain roasted seed mix for the morning bowl. No chilli &mdash; the one everyone in the house can eat.</p>
             <p class="heat"><span class="pods" aria-hidden="true">
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#3A2615"/></svg>
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#3A2615"/></svg>
-              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#3A2615"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#D9D0BF"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#D9D0BF"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24"><path d="M12 3c3.6 0 6.6 2.4 6.6 6 0 4.2-3 8.4-6.6 12-3.6-3.6-6.6-7.8-6.6-12 0-3.6 3-6 6.6-6z" fill="#D9D0BF"/></svg>
             </span> No heat</p>
           </div>
           <div class="prices"><span class="kg">&#8377;500 <span>/ kg</span></span><span class="quarter">&#8377;125 for 250g</span></div>
